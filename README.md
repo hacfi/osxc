@@ -29,6 +29,7 @@ ansible-galaxy install -r requirements.yml
 5. Install individual playbooks:
 
 ```sh
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ansible-playbook osx.yml
 ansible-playbook configuration.yml
 ansible-playbook apps.yml
