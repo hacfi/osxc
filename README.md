@@ -4,7 +4,6 @@
 
 1. Install [Apple Xcode Command Line Tools](https://developer.apple.com/downloads/): [6.1 for 10.9](https://developer.apple.com/downloads/download.action?path=Developer_Tools/command_line_tools_os_x_10.9_for_xcode__xcode_6.1/command_line_tools_for_osx_10.9_for_xcode_6.1.dmg)
 
-
 2. Install Ansible:
 
 ```sh
@@ -37,4 +36,4 @@ ansible-playbook fonts.yml
 ```
 
 
-For more information check out [osxc/starter](https://github.com/osxc/starter)
+For more information check out [osxc/starter](https://github.com/osxc/starter).
