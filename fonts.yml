@@ -1,0 +1,16 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+    - caskroom/fonts
+    cask_packages:
+    - font-droid-sans
+    - font-inconsolata
+    - font-inconsolata-for-powerline
+    - font-lato
+    - font-open-sans
+    - font-pt-sans
+    - font-source-code-pro
+    - font-sauce-code-powerline
+    - font-yanone-kaffeesatz

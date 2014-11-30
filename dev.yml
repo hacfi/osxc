@@ -1,0 +1,32 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+    - homebrew/dupes
+    - homebrew/versions
+    - homebrew/homebrew-php
+    brew_packages:
+    - awscli
+    - cloc
+    - ec2-api-tools
+    - elasticsearch
+    - git-annex
+    - go
+    - googlecl
+    - graphviz
+    - httpie
+    - iftop
+    - imagemagick
+    - ngrok
+    - node
+    - the_silver_searcher
+    cask_packages:
+    - google-cloud-sdk
+#    - java
+#    - kaleidoscope
+    - lincastor
+#    - ngrok
+    - sequel-pro
+    - sourcetree
+    - xquartz

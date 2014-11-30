@@ -1,0 +1,23 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    cask_packages:
+    - asepsis
+    - caffeine
+    - dropbox
+#    - firefox # @TODO: PR for dev version
+    - gitter
+    - google-chrome
+    - gpgtools
+#    - linkinus
+    - menubar-countdown
+    - mou
+    - qlcolorcode
+    - qlstephen
+    - skype
+    - spectacle
+    - teamviewer
+    - the-unarchiver
+    - unrar
+    - vlc

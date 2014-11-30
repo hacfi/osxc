@@ -1,0 +1,33 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_packages:
+    - chrome-cli
+    - git
+    - htop-osx
+    - known_hosts
+    - mtr
+    - pidof
+    - rdiff-backup
+    - reattach-to-user-namespace
+    - rename
+    - rsnapshot
+    - screenresolution
+    - tmux
+    - tree
+    - unrar
+    - vim
+    - wget
+    - youtube-dl
+    - zsh
+    - zsh-completions
+    - zsh-history-substring-search
+    - zsh-syntax-highlighting
+    cask_packages:
+    - iterm2
+    - jumpcut
+    - little-snitch
+# @TODO: dock items + folders
+# @TODO: disable dashboard
+# @TODO: disable notification center

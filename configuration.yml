@@ -1,0 +1,31 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.repository
+    clone_url: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: /Users/{{ ansible_user_id }}/.oh-my-zsh
+  - role: osxc.repository
+    clone_url: git@github.com:hacfi/dotfiles.git
+    dest: /Users/{{ ansible_user_id }}/.dotfiles
+    links:
+    - src: bin/lns
+      dest: /usr/local/bin/lns
+    - src: git/gitconfig
+      dest: /Users/{{ ansible_user_id }}/.gitconfig
+    - src: git/gitconfig
+      dest: /Users/{{ ansible_user_id }}/.gitignore
+    - src: zsh/hacfi-osx.zsh
+      dest: /Users/{{ ansible_user_id }}/.oh-my-zsh/custom/hacfi-osx.zsh
+    - src: zsh/hacfi.zsh
+      dest: /Users/{{ ansible_user_id }}/.oh-my-zsh/custom/hacfi.zsh
+    - src: zsh/hacfi.zsh-theme
+      dest: /Users/{{ ansible_user_id }}/.oh-my-zsh/custom/hacfi.zsh-theme
+  post_tasks:
+  - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
+  - file: path=/Users/{{ ansible_user_id }}/.oh-my-zsh/custom/plugins/jump/ state=directory
+  - file: src=/Users/{{ ansible_user_id }}/.dotfiles/zsh/jump.plugin.zsh dest=/Users/{{ ansible_user_id }}/.oh-my-zsh/custom/plugins/jump/jump.plugin.zsh state=link
+  - shell: chsh -s `which zsh`
+
+- hosts: all
+  roles:
+  - osxc.common-env
