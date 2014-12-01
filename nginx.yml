@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+  tasks:
+    - homebrew: name=nginx state=present install_options=devel

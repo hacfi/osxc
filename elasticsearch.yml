@@ -1,0 +1,9 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    cask_packages:
+    - java
+  - role: osxc.packages
+    brew_packages:
+    - elasticsearch

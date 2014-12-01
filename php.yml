@@ -1,0 +1,20 @@
+---
+- hosts: all
+  roles:
+#  - role: osxc.packages
+#    brew_taps:
+#    - homebrew/homebrew-php
+  tasks:
+#    - homebrew_tap: tap=homebrew/homebrew-php state=present
+    - homebrew: name=php55 state=present install_options=with-fpm,with-imap
+
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_packages:
+    - php55-amqp
+    - php55-imagick
+    - php55-mcrypt
+    - php55-oauth
+    - php55-redis
+    - php55-xdebug

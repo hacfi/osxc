@@ -1,0 +1,5 @@
+---
+install_method: dmg
+installer_type: app
+affected_users:
+- "{{ ansible_user_id }}"

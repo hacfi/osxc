@@ -12,7 +12,7 @@
       dest: /usr/local/bin/lns
     - src: git/gitconfig
       dest: /Users/{{ ansible_user_id }}/.gitconfig
-    - src: git/gitconfig
+    - src: git/gitignore
       dest: /Users/{{ ansible_user_id }}/.gitignore
     - src: zsh/hacfi-osx.zsh
       dest: /Users/{{ ansible_user_id }}/.oh-my-zsh/custom/hacfi-osx.zsh

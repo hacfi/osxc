@@ -45,7 +45,7 @@ ZSH_THEME="hacfi"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew brew-cask composer copydir copyfile docker encode64 extract gem git go history history-substring-search jump mosh npm osx redis-cli rsync rvm ssh-agent sublime sudo symfony2 tmux unrar)
+plugins=(aws brew brew-cask composer copydir copyfile docker encode64 extract gem git go history history-substring-search hub jump mosh npm osx redis-cli rsync rvm ssh-agent sublime sudo symfony2 tmux unrar)
 
 # User configuration
 
