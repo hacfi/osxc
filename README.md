@@ -31,9 +31,15 @@ ansible-galaxy install -r requirements.yml
 ```sh
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ansible-playbook osx.yml
+ansible-playbook osx_hide.yml --ask-sudo-pass
 ansible-playbook configuration.yml
 ansible-playbook apps.yml
 ansible-playbook fonts.yml
+ansible-playbook dev.yml
+ansible-playbook nginx.yml
+ansible-playbook php.yml
+ansible-playbook percona.yml
+ansible-playbook elasticsearch.yml
 ```
 
 
